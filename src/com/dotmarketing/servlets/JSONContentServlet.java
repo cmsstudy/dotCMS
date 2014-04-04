@@ -285,7 +285,9 @@ public class JSONContentServlet extends HttpServlet implements Servlet {
 		JSONObject jo = new JSONObject();
 		
 		Structure s = con.getStructure();
-		Map map = con.getMap();
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.putAll(con.getMap());
+
 		for (Iterator it = map.keySet().iterator(); it.hasNext(); ) {  
 			String key = (String) it.next();  
 			if(Arrays.binarySearch(ignoreFields, key) < 0){
