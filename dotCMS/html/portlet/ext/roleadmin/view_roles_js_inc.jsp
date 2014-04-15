@@ -366,7 +366,8 @@
 		// if less than 3 characters are typed in the filter textbox, a tooltip will show up after 3 seconds
 		if(name!=null && name.length> 0 && name.length<3) {
 			hideToolTip();
-			setTimeout("showToolTip()", 3000);
+			setTimeout("showToolTip()", 1000);
+			setTimeout("hideToolTip()", 3000);
 		} else if(name=='') {// if filter textbox is empty
 			hideToolTip();
 			lastSelectedNode = null;
