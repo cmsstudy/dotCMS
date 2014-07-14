@@ -47,7 +47,7 @@ import com.dotmarketing.webdav.WebDavTest;
  */
 @RunWith (Suite.class)
 @Suite.SuiteClasses ({
-    LinkCheckerAPITest.class,
+    LinkCheckerAPITest.class/*,
     TemplateAPITest.class,
     HTMLPageAPITest.class,
     CategoryAPITest.class,
@@ -84,7 +84,7 @@ import com.dotmarketing.webdav.WebDavTest;
     ESContentFactoryImplTest.class,
     HibernateUtilTest.class,
     WorkflowAPITest.class,
-    ContentletAjaxTest.class
+    ContentletAjaxTest.class*/
 })
 public class AllTestsSuite {
 
